@@ -18,8 +18,13 @@
 
 1. ng new angular-tour-of-heroes
 
+opciones:
+
 -> CSS
+
 -> No [Server-Side Rendering (SSR) and Static Site Generation]
+
 -> No ['zoneless' application without zone.js]
+
 -> None [AI tools do you want to configure with Angular best practices?]
 
