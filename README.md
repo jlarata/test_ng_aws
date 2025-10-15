@@ -17,8 +17,8 @@
 ## instrucciones para instalar desde cero: 
 
 1. ng new angular-tour-of-heroes
-	-> CSS
-	-> No [Server-Side Rendering (SSR) and Static Site Generation]
-	-> No ['zoneless' application without zone.js]
-	-> None [AI tools do you want to configure with Angular best practices?]
+-> CSS
+-> No [Server-Side Rendering (SSR) and Static Site Generation]
+-> No ['zoneless' application without zone.js]
+-> None [AI tools do you want to configure with Angular best practices?]
 
