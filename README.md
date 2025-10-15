@@ -1,12 +1,21 @@
 # test_ng_aws integration
 
+[kesesto](/jlarata/test_ng_aws?tab=readme-ov-file#kesesto)
+[bibliografía](/jlarata/test_ng_aws#bibliograf%C3%ADa)
+[instrucciones para clonar y montar](/jlarata/test_ng_aws?tab=readme-ov-file#instrucciones-para-clonar-y-montar)
+[instrucciones para instalar desde cero](/jlarata/test_ng_aws?tab=readme-ov-file#instrucciones-para-instalar-desde-cero)
+
+## kesesto:
+
+la idea es probar una app simple en angular, buildearla, y montarla en un bucket s3 de aws. y/o testear montar y servir en una EC3 dentro de una VPC, en el marco de la materia _Desarrollo en la nube_ de la carrera Desarrollo de Softare cursada en el IFTS N° 11, año 2025.
+
 ## bibliografía:
 
-1. angular tour of heroes: https://v17.angular.io/tutorial/tour-of-heroes
+1. [angular tour of heroes](https://v17.angular.io/tutorial/tour-of-heroes)
 
-2. este tutorial que actualiza paso a paso para poder desarrollar directo en standalone https://www.guido-flohr.net/standalone-angular-tour-of-heroes/
+2. [este tutorial](https://www.guido-flohr.net/standalone-angular-tour-of-heroes/) que actualiza paso a paso para poder desarrollar directo en standalone (ya está outdated, pero todo lo que no corresponde es porque es aún más simple).
 
-## instrucciones generales: 
+## instrucciones para clonar y montar: 
 
 1. teniendo instalado npm (podés chequear con con `npm -v` )
 
