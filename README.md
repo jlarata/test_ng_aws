@@ -6,6 +6,8 @@
 
 la idea es probar una app simple en angular, buildearla, y montarla en un bucket s3 de aws. y/o testear montar y servir en una EC3 dentro de una VPC, en el marco de la materia _Desarrollo en la nube_ de la carrera Desarrollo de Softare cursada en el IFTS N° 11, año 2025.
 
+estado actual (15/10 10am): creando y montando el tour of heroes.
+
 ### bibliografía:
 
 1. [angular tour of heroes](https://v17.angular.io/tutorial/tour-of-heroes)
