@@ -20,11 +20,6 @@ nav a:active {
   background-color: black;
 }
 
-DashboardComponent
-src/app/dashboard/dashboard.component.html
-src/app/dashboard/dashboard.component.ts
-src/app/dashboard/dashboard.component.css
-content_copy
 /* DashboardComponent's private CSS styles */
 
 h2 {
