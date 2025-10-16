@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Hero } from '../hero';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { HeroDetail } from "../hero-detail/hero-detail";
 import { HeroService } from '../hero-service';
 import { MessageService } from '../message-service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-heroes',
-  imports: [CommonModule, FormsModule, HeroDetail],
+  imports: [CommonModule, FormsModule, RouterModule],
   templateUrl: './heroes.html',
   styleUrl: './heroes.css'
 })
@@ -20,11 +20,6 @@ export class Heroes {
 
   ngOnInit(): void {
     this.getHeroes();
-  }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`)
   }
 
   getHeroes(): void {
