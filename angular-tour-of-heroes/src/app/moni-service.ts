@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { MessageService } from './message-service';
+import { MoniMensaje } from './moniMensaje';
 
 @Injectable({
   providedIn: 'root'
@@ -9,22 +10,19 @@ export class MoniService {
   private moniUrl = 'https://8vdbttfkeg.execute-api.us-east-1.amazonaws.com/';
   constructor(private messageService: MessageService) { }
 
-  data: string = ''
+  moniMensajes : MoniMensaje[] = []
   error: string | null = null;
 
   async getMessage() {
-    
     try {
       const response = await fetch(this.moniUrl);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
-      this.data = await response.text(); // Or response.text() if your Lambda returns plain text
-
-      return this.data;
+      this.moniMensajes[0] = await response.json(); // Or response.text() if your Lambda returns plain text
+      return this.moniMensajes[0];
     } catch (error) {
-      this.error = "Error fetching data:, error";
-      return this.error
+      throw new Error(`Error fetching data:: ${error}`);
     }
   }
 

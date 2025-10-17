@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MoniService } from '../moni-service';
+import { MoniMensaje } from '../moniMensaje';
 
 @Component({
   selector: 'app-moni-component',
@@ -9,23 +10,20 @@ import { MoniService } from '../moni-service';
 })
 export class MoniComponent {
 
-  mensaje: string = ""
+  moniMensajes: MoniMensaje[] = []
 
   constructor(private moniService: MoniService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.getMoniMessage();
   }
 
 
   async getMoniMessage(): Promise<void> {
     try {
-      this.mensaje = await this.moniService.getMessage()
-      console.log(this.mensaje)
+      this.moniMensajes[0] = await this.moniService.getMessage()
     } catch (e: any) {
-      console.log(e.message);
+      throw new Error(`Error fetching data:: ${e}`);
     }
-    
-    //  .subscribe(mensaje => this.mensaje = mensaje)
   }
 }
